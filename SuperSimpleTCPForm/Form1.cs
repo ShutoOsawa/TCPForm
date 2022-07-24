@@ -57,18 +57,25 @@ namespace SuperSimpleTCPForm
 
         private void Events_Disconnected(object sender, ConnectionEventArgs e)
         {
-            infoTextBox.Text += $"Server disconnected";
+            this.Invoke((MethodInvoker)delegate {
+                infoTextBox.Text += $"Server disconnected";
+            });
         }
 
         private void Events_DataReceived(object sender, DataReceivedEventArgs e)
         {
-            infoTextBox.Text += $"{e.IpPort}: {Encoding.UTF8.GetString(e.Data)}";
+            this.Invoke((MethodInvoker)delegate
+            {
+                infoTextBox.Text += $"{e.IpPort}: {Encoding.UTF8.GetString(e.Data)}";
+            });
         }
     
 
         private void Events_Connected(object sender, ConnectionEventArgs e)
         {
-            infoTextBox.Text += $"Server connected";
+            this.Invoke((MethodInvoker)delegate{
+                infoTextBox.Text += $"Server connected";
+            });
         }
     }
 }

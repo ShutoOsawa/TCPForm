@@ -38,19 +38,26 @@ namespace Server
 
         private void Events_DataReceived(object sender, DataReceivedEventArgs e)
         {
-            infoTextBox.Text += $"{e.IpPort}: {Encoding.UTF8.GetString(e.Data)}";
+            this.Invoke((MethodInvoker)delegate {
+                infoTextBox.Text += $"{e.IpPort}: {Encoding.UTF8.GetString(e.Data)}";
+            });
         }
 
         private void Events_ClientDisConnected(object sender, ConnectionEventArgs e)
         {
-            infoTextBox.Text += $"{e.IpPort} disconnected";
+            this.Invoke((MethodInvoker)delegate {
+                infoTextBox.Text += $"{e.IpPort} disconnected";
             clientIPListBox.Items.Remove(e.IpPort);
+
+            });
         }
 
         private void Events_ClientConnected(object sender, ConnectionEventArgs e)
         {
-            infoTextBox.Text += $"{e.IpPort} connected";
+            this.Invoke((MethodInvoker)delegate {
+                infoTextBox.Text += $"{e.IpPort} connected";
             clientIPListBox.Items.Add(e.IpPort);
+            });
         }
 
         private void sendButton_Click(object sender, EventArgs e)
