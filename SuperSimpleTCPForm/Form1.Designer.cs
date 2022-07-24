@@ -29,34 +29,35 @@ namespace SuperSimpleTCPForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.hostTextBox = new System.Windows.Forms.TextBox();
-            this.portTextBox = new System.Windows.Forms.TextBox();
+            this.ipTextBox = new System.Windows.Forms.TextBox();
             this.messageTextBox = new System.Windows.Forms.TextBox();
+            this.infoTextBox = new System.Windows.Forms.TextBox();
             this.sendButton = new System.Windows.Forms.Button();
             this.connectButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // hostTextBox
+            // ipTextBox
             // 
-            this.hostTextBox.Location = new System.Drawing.Point(58, 31);
-            this.hostTextBox.Name = "hostTextBox";
-            this.hostTextBox.Size = new System.Drawing.Size(388, 20);
-            this.hostTextBox.TabIndex = 0;
-            // 
-            // portTextBox
-            // 
-            this.portTextBox.Location = new System.Drawing.Point(58, 166);
-            this.portTextBox.Name = "portTextBox";
-            this.portTextBox.Size = new System.Drawing.Size(388, 20);
-            this.portTextBox.TabIndex = 1;
+            this.ipTextBox.Location = new System.Drawing.Point(58, 31);
+            this.ipTextBox.Name = "ipTextBox";
+            this.ipTextBox.Size = new System.Drawing.Size(388, 20);
+            this.ipTextBox.TabIndex = 0;
+            this.ipTextBox.Text = "127.0.0.1:9000";
             // 
             // messageTextBox
             // 
-            this.messageTextBox.Location = new System.Drawing.Point(58, 76);
-            this.messageTextBox.Multiline = true;
+            this.messageTextBox.Location = new System.Drawing.Point(58, 166);
             this.messageTextBox.Name = "messageTextBox";
-            this.messageTextBox.Size = new System.Drawing.Size(388, 84);
-            this.messageTextBox.TabIndex = 2;
+            this.messageTextBox.Size = new System.Drawing.Size(388, 20);
+            this.messageTextBox.TabIndex = 1;
+            // 
+            // infoTextBox
+            // 
+            this.infoTextBox.Location = new System.Drawing.Point(58, 76);
+            this.infoTextBox.Multiline = true;
+            this.infoTextBox.Name = "infoTextBox";
+            this.infoTextBox.Size = new System.Drawing.Size(388, 84);
+            this.infoTextBox.TabIndex = 2;
             // 
             // sendButton
             // 
@@ -66,6 +67,7 @@ namespace SuperSimpleTCPForm
             this.sendButton.TabIndex = 4;
             this.sendButton.Text = "Send";
             this.sendButton.UseVisualStyleBackColor = true;
+            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
             // 
             // connectButton
             // 
@@ -84,11 +86,12 @@ namespace SuperSimpleTCPForm
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.connectButton);
             this.Controls.Add(this.sendButton);
+            this.Controls.Add(this.infoTextBox);
             this.Controls.Add(this.messageTextBox);
-            this.Controls.Add(this.portTextBox);
-            this.Controls.Add(this.hostTextBox);
+            this.Controls.Add(this.ipTextBox);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,9 +99,9 @@ namespace SuperSimpleTCPForm
 
         #endregion
 
-        private System.Windows.Forms.TextBox hostTextBox;
-        private System.Windows.Forms.TextBox portTextBox;
+        private System.Windows.Forms.TextBox ipTextBox;
         private System.Windows.Forms.TextBox messageTextBox;
+        private System.Windows.Forms.TextBox infoTextBox;
         private System.Windows.Forms.Button sendButton;
         private System.Windows.Forms.Button connectButton;
     }

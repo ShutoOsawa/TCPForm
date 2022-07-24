@@ -7,6 +7,5 @@ C:\Users\Fridge\Documents\CSDev\SuperSimpleTCPForm\SuperSimpleTCPForm\obj\Debug\
 C:\Users\Fridge\Documents\CSDev\SuperSimpleTCPForm\SuperSimpleTCPForm\obj\Debug\SuperSimpleTCPForm.Properties.Resources.resources
 C:\Users\Fridge\Documents\CSDev\SuperSimpleTCPForm\SuperSimpleTCPForm\obj\Debug\SuperSimpleTCPForm.csproj.GenerateResource.cache
 C:\Users\Fridge\Documents\CSDev\SuperSimpleTCPForm\SuperSimpleTCPForm\obj\Debug\SuperSimpleTCPForm.csproj.CoreCompileInputs.cache
-C:\Users\Fridge\Documents\CSDev\SuperSimpleTCPForm\SuperSimpleTCPForm\obj\Debug\SuperSimpleTCPForm.csproj.CopyComplete
 C:\Users\Fridge\Documents\CSDev\SuperSimpleTCPForm\SuperSimpleTCPForm\obj\Debug\SuperSimpleTCPForm.exe
 C:\Users\Fridge\Documents\CSDev\SuperSimpleTCPForm\SuperSimpleTCPForm\obj\Debug\SuperSimpleTCPForm.pdb
