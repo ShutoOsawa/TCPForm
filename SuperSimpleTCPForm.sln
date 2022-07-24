@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSimpleTCPForm", "SuperSimpleTCPForm\SuperSimpleTCPForm.csproj", "{FE0BA896-6214-49B9-AF1C-0869E2B52854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{E3D47646-C87B-402E-B39A-2E8EC588F468}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE0BA896-6214-49B9-AF1C-0869E2B52854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0BA896-6214-49B9-AF1C-0869E2B52854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0BA896-6214-49B9-AF1C-0869E2B52854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0BA896-6214-49B9-AF1C-0869E2B52854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D47646-C87B-402E-B39A-2E8EC588F468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D47646-C87B-402E-B39A-2E8EC588F468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D47646-C87B-402E-B39A-2E8EC588F468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D47646-C87B-402E-B39A-2E8EC588F468}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D04DB58-FD77-497E-A63A-0838D08BF6CA}
+	EndGlobalSection
+EndGlobal
